@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+.center {
+  text-align: center;
+  margin-top: 100px;
+}
+
+a {
+  color: #ff4da6;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Stars background */
+.stars {
+  width: 100%;
+  height: 100vh;
+  background: url('https://i.imgur.com/1aXgF.png');
+  animation: moveStars 60s linear infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 10000px 5000px; }
+}
+
+/* Buttons */
+button {
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.yes { background: #ff4da6; color: white; }
+.no { background: #333; color: white; position: absolute; }
+
+/* Chat style */
+.chat {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.msg {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  }
