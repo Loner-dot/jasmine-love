@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Elizabeth ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="center">
+  <h1>Elizabeth... ❤️</h1>
+  <h2>Will you be my girlfriend?</h2>
+
+  <button class="yes" onclick="yes()">Yes 💖</button>
+  <button class="no" id="noBtn">No 😅</button>
+</div>
+
+<script>
+function yes() {
+  document.body.innerHTML = "<div class='center'><h1>❤️🥺</h1><p>You just made me the happiest.</p></div>";
+}
+
+let noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", function() {
+  noBtn.style.top = Math.random() * window.innerHeight + "px";
+  noBtn.style.left = Math.random() * window.innerWidth + "px";
+});
+</script>
+
+</body>
+</html>
